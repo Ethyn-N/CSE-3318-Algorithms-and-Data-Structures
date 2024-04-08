@@ -142,11 +142,11 @@ void heapify(char arr[][MAX], int n, int i) {
     int left = 2 * i + 1; // left = 2*i + 1
     int right = 2 * i + 2; // right = 2*i + 2
 
-    // If left child is larger than root
+    // If left child is smaller than root
     if (left < n && strcmp(arr[left], arr[smallest]) < 0)
         smallest = left;
  
-    // If right child is larger than smallest so far
+    // If right child is smaller than smallest so far
     if (right < n && strcmp(arr[right], arr[smallest]) < 0)
         smallest = right;
  
